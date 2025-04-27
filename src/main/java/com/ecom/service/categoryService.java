@@ -1,10 +1,15 @@
 package com.ecom.service;
 
+import java.util.List;
 import org.springframework.stereotype.Service;
+import com.ecom.model.Category;
 
-@Service
 public interface categoryService {
 	
+	public Category saveCategory(Category cate);
 	
-
+	public Boolean existCategory(String name);
+	
+	public List<Category> getAllCategory();
+	
 }

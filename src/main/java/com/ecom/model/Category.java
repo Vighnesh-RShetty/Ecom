@@ -15,6 +15,14 @@ public class Category {
 	private int id;
 	private String name;
 	private String imagePath;
+	private Boolean isActive;
+	
+	public Boolean getIsActive() {
+		return isActive;
+	}
+	public void setIsActive(Boolean isActive) {
+		this.isActive = isActive;
+	}
 	public int getId() {
 		return id;
 	}
@@ -33,11 +41,8 @@ public class Category {
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
 	}
-	
 	@Override
 	public String toString() {
-		return "Category [id=" + id + ", name=" + name + ", imagePath=" + imagePath + "]";
+		return "Category [id=" + id + ", name=" + name + ", imagePath=" + imagePath + ", isActive=" + isActive + "]";
 	}
-	
-
 }
