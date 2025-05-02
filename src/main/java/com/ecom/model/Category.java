@@ -1,7 +1,5 @@
 package com.ecom.model;
 
-import org.hibernate.annotations.GeneratorType;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,7 +12,7 @@ public class Category {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
-	private String imagePath;
+	private String imagePaths;
 	private Boolean isActive;
 	
 	public Boolean getIsActive() {
@@ -35,14 +33,14 @@ public class Category {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getImagePath() {
-		return imagePath;
+	public String getImagePaths() {
+		return imagePaths;
 	}
-	public void setImagePath(String imagePath) {
-		this.imagePath = imagePath;
+	public void setImagePaths(String imagePaths) {
+		this.imagePaths = imagePaths;
 	}
 	@Override
 	public String toString() {
-		return "Category [id=" + id + ", name=" + name + ", imagePath=" + imagePath + ", isActive=" + isActive + "]";
+		return "Category [id=" + id + ", name=" + name + ", imagePath=" + imagePaths + ", isActive=" + isActive + "]";
 	}
 }

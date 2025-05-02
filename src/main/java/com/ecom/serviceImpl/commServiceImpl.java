@@ -17,8 +17,6 @@ public class commServiceImpl implements commonService{
 	@Override
 	public void removeSessionMsg() {
 		
-	
-		 
 		HttpServletRequest request = ((ServletRequestAttributes)(RequestContextHolder.getRequestAttributes())).getRequest();
 	    HttpSession ses=request.getSession();
 	    ses.removeAttribute("succMsg");
@@ -26,3 +24,4 @@ public class commServiceImpl implements commonService{
 	}
 
 }
+
